@@ -10,10 +10,10 @@
     </parent>
     <groupId>com.github.ekko</groupId>
     <artifactId>springboot-email</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
+    <packaging>jar</packaging>
     <name>springboot-email</name>
     <description>Demo project for Spring Boot</description>
-
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -54,6 +54,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <dependency>
+            <groupId>com.tencentcloudapi</groupId>
+            <artifactId>tencentcloud-sdk-java</artifactId>
+            <version>3.1.71</version>
+        </dependency>
+
     </dependencies>
 
     <build>

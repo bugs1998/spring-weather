@@ -22,7 +22,7 @@ public class MailController {
     }
 
     @GetMapping("/send")
-    @Scheduled(cron = "0 0 23 * * ? ")
+    @Scheduled(cron = "0 0/1 * * * *")
     public boolean sendEmail() {
         return emailService.sendSimpleMessage();
     }
